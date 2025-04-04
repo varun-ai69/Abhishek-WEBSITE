@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Automation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap:20px;
+            
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: purple;
+            color: white; /* White font color */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            cursor: pointer;
+        }
+
+        .card {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: white; 
+    padding: 20px;
+    margin: 20px auto; 
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.card {
+    animation: floating 3s infinite ease-in-out;
+}
+
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee direction="right">Agriculture Automation System</marquee>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our group leader is krishna.html">About Us</a></li>
+            <li><a href="9773294717.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card" onclick="window.open('smartIrrigation.html', '_blank');">
+            <h2>Smart Irrigation</h2>
+            <p>Smart irrigation technology uses weather data or soil moisture data to determine the irrigation need of the landscape. These products maximize irrigation efficiency by reducing water waste while maintaining plant health and quality.</p>
+        </div>
+        <div class="card" onclick="window.open('soilmonitoring.html', '_blank');">
+            <h2>Soil Monitoring</h2>
+            <p>Soil moisture sensors measure the amount of water in the soil, vital for agriculture, environmental monitoring, and scientific research. They use electrical resistance or capacitance to determine moisture levels.</p>
+        </div>
+        <div class="card" onclick="window.open('weatherforecast.html', '_blank');">
+            <h2>Weather Forecast</h2>
+            <p>Weather forecasting is crucial for agriculture, enabling farmers to make informed decisions about planting, irrigation, pest control, and harvesting, ultimately optimizing crop protection and maximizing yields.</p>
+        </div>
+        <div class="card" onclick="window.open('cropmonitoringsystem.html', '_blank');">
+            <h2>Crop Monitoring Sensor</h2>
+            <p>Crop monitoring involves tracking the health and growth of plants in agricultural fields. It helps identify potential problems or diseases early and take preventive measures.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Agriculture Automation. All rights reserved.</p>
+    </div>
+</body>
+</html>
